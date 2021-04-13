@@ -25,7 +25,7 @@ https://xxx.xxx.xxx.xxx:8443/module/login/login.html
 ![image](image/frame.png)
 
 # 脚本使用
-待检测地址存放在Url.txt中，保存在脚本同目录下。
+待检测地址存放在Url.txt中，保存在脚本同目录下,脚本运行成功会将存在漏洞地址保存在当前目录下的result.txt中。
 
 python3 any-user-login.py 
 
