@@ -6,7 +6,7 @@ title="TSCEV4.0"
 访问登录页面：  
 https://xxx.xxx.xxx.xxx:8443/module/login/login.html 
   
-![图片](https://user-images.githubusercontent.com/56914048/114568310-98621100-9ca6-11eb-8dac-bbb253f01206.png)  
+![image](image/login.png)  
   
 使用用户名admin|pwd和任意密码进行登录  
   
