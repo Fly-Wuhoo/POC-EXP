@@ -20,7 +20,7 @@ https://xxx.xxx.xxx.xxx:8443/module/login/login.html
 
 # 脚本使用
 待检测地址存放在Url.txt中，保存在脚本同目录下。  
-python3 any-user-login.py
+python3 any-user-login.py  
 ![image](image/run.png)
 
 
