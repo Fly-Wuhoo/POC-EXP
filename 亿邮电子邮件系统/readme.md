@@ -19,8 +19,7 @@ type='|cat /etc/passwd||'
 ```
 ![image](images/post.png)  
 脚本使用方法：  
-python3 Eyou.py [-h] [-u] [-f]
-
+python3 Eyou.py [-]
 
 
 
