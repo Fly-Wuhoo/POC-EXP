@@ -19,7 +19,10 @@ type='|cat /etc/passwd||'
 ```
 ![image](images/post.png)   
 脚本使用方法：  
-python3 Eyou.py [-f  Url.txt]
+python3 Eyou.py [-u url] [-f  Url.txt]  
+如果使用-f参数脚本会将检查结果保存在当前目录下生成result.txt中  
+![image](images/poc.png)   
+
 
 
 
