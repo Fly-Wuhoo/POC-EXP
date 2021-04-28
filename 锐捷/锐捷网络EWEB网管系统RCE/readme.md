@@ -4,11 +4,11 @@ NBR108G-P、NBR1000G-E、NBR1300G-E、NBR1700G-E、NBR2100G-E、NBR2500D-E、NBR
 EG系列:  
 RG-EG1000C、RG-EG2000F、RG-EG2000K、RG-EG2000L、RG-EG2000CE、 RG-EG2000SE、RG-EG2000GE、RG-EG2000XE、RG-EG2000UE、RG-EG3000CE、RG-EG3000SE、RG-EG3000GE、RG-EG3000ME、RG-EG3000UE、RG-EG3000XE、RG-EG2100-P、EG3210、EG3220、EG3230、EG3250
 # FOFa dork：
-title="锐捷网络-EWEB网管系统" 
+title="锐捷网络-EWEB网管系统"  
 icon_hash="-692947551"
 # 漏洞复现：
 登录页面：
-![image](images/login.png)
+![image](images/login.png)  
 漏洞发生于文件 /guest_auth/guestIsUp.php，通过构造请求包，在ip参数处通过拼接命令进行命令执行，post包如下：    
 ```
 POST /guest_auth/guestIsUp.php HTTP/1.1
