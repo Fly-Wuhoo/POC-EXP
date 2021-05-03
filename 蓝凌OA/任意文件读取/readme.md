@@ -16,5 +16,7 @@ Content-Length: 44
 
 var={"body":{"file":"file:///etc/passwd"}}
 ```
+返回结果：  
+![image](images/burp.png) 
 使用脚本批量验证：    
 ![image](images/script.png)  
