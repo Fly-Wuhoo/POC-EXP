@@ -10,9 +10,10 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 key=0
 def header():
-	print('\033[34m*-----------------------------------------*\033[0m')
-	print('\033[34m!description:锐捷EG易网关后台cli.php命令执行   \033[0m')
-	print('\033[34m*-----------------------------------------*\033[0m')
+	print('\033[32m!***********************************************!\033[0m')
+	print('\033[34m!description:锐捷EG易网关后台cli.php命令执行    !\033[0m')
+	print('\033[34m!             Author:Fly_Wuhoo                  !\033[0m')
+	print('\033[32m!***********************************************!\033[0m')
 
 def Arg_Parse():
 	parser = argparse.ArgumentParser()
