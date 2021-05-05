@@ -5,10 +5,11 @@ import random
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def header():
-    print('*-----------------------------------------*')
-    print('!  \033[36mdescription:锐捷网络EWEB网管系统RCE    \033[0m')
-    print('!  \033[36m使用格式: python3 gateway.py urls.txt    \033[0m')
-    print('*-----------------------------------------*')
+    print('\033[32m!***********************************************!\033[0m')
+    print('\033[36m!      description:锐捷网络EWEB网管系统RCE      !\033[0m')
+    print('\033[36m!    使用格式: python3 gateway.py urls.txt      !\033[0m')
+    print('\033[36m!             Author:Fly_Wuhoo                  !\033[0m')
+    print('\033[32m!***********************************************!\033[0m')
 
 def Detect(targets):
     header= {
