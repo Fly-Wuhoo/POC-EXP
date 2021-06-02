@@ -1,7 +1,7 @@
 # 影响范围：
 佑友防火墙
 # FoFa Dork
-app="网康科技-下一代防火墙"
+title="佑友防火墙"
 # 漏洞复现：
 登录页面：
 ![image](images/login.png)
